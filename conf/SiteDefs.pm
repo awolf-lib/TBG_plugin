@@ -1,10 +1,10 @@
-package awolf-lib::template-plugin::SiteDefs;
+package template-plugin;
 
 use strict;
 
 ## testing
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . 'awolf-lib::template-plugin/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . 'template-plugin/modules';
 
   $SiteDefs::SITE_LOGO = 'mealybugbase.png';
   $SiteDefs::SITE_LOGO_WIDTH = 150;
