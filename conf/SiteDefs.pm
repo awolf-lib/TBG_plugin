@@ -10,7 +10,7 @@ sub update_conf {
   $SiteDefs::SITE_LOGO_WIDTH = 150;
   $SiteDefs::SITE_LOGO_HEIGHT = 50;
   $SiteDefs::SITE_LOGO_ALT = 'GenomeHubs Ensembl';
-  $SiteDefs::SITE_NAME = 'GenomeHubs Ensembl';
+  $SiteDefs::SITE_NAME = 'TEST Ensembl';
 
   $SiteDefs::ISSUE_TRACKER_URL = 'https://google.com';
   $SiteDefs::ISSUE_TRACKER_TITLE = 'report an issue';
