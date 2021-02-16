@@ -2,7 +2,6 @@ package EG::GenomeHubs::SiteDefs;
 
 use strict;
 
-## testing
 sub update_conf {
   push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . 'template-plugin/modules';
 
@@ -10,7 +9,7 @@ sub update_conf {
   $SiteDefs::SITE_LOGO_WIDTH = 150;
   $SiteDefs::SITE_LOGO_HEIGHT = 50;
   $SiteDefs::SITE_LOGO_ALT = 'Mealybug Ensembl';
-  $SiteDefs::SITE_NAME = 'Mealybug Ensembl';
+  $SiteDefs::SITE_NAME = 'Test Ensembl';
 
   $SiteDefs::ISSUE_TRACKER_URL = 'https://github.com/genomehubs/genomehubs/issues?status=new&status=open';
   $SiteDefs::ISSUE_TRACKER_TITLE = 'report an issue';
