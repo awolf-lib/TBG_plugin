@@ -3,7 +3,7 @@ package EG::GenomeHubs::SiteDefs;
 use strict;
 
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . 'template-plugin/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
 
   $SiteDefs::SITE_LOGO = 'mealybugbase.png';
   $SiteDefs::SITE_LOGO_WIDTH = 150;
