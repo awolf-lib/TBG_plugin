@@ -1,4 +1,4 @@
-package EG::GenomeHubs::SiteDefs;
+package awolf-lib::template_plugin::SiteDefs;
 
 use strict;
 
@@ -34,6 +34,5 @@ sub update_conf {
   $SiteDefs::ASSEMBLY_GROUP_B_TITLE = 'rest';
   $SiteDefs::ASSEMBLY_GROUP_B_TEMPLATE = '_list_template';
 }
-
 
 1;
