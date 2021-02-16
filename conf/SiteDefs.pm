@@ -12,7 +12,7 @@ sub update_conf {
   $SiteDefs::SITE_LOGO_ALT = 'GenomeHubs Ensembl';
   $SiteDefs::SITE_NAME = 'GenomeHubs Ensembl';
 
-  $SiteDefs::ISSUE_TRACKER_URL = 'https://github.com/genomehubs/genomehubs/issues?status=new&status=open';
+  $SiteDefs::ISSUE_TRACKER_URL = 'https://google.com';
   $SiteDefs::ISSUE_TRACKER_TITLE = 'report an issue';
 
   $SiteDefs::ENSEMBL_SERVERADMIN = 'contact&#064;lepbase.org';
