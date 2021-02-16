@@ -1,4 +1,4 @@
-package EG::GenomeHubs::SiteDefs
+package awolf-lib::template-plugin::SiteDefs
 
 use strict;
 
