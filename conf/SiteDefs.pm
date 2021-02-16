@@ -1,4 +1,4 @@
-package template_plugin_module
+package EG::GenomeHubs::SiteDefs
 
 use strict;
 
