@@ -4,7 +4,7 @@ use strict;
 
 
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/conf/SiteDef.pm';
 
   $SiteDefs::SITE_LOGO = 'ensembl.genomehubs.png';
   $SiteDefs::SITE_LOGO_WIDTH = 150;
