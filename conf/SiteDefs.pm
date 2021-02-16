@@ -6,17 +6,6 @@ use strict;
 sub update_conf {
   push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
 
-  $SiteDefs::SITE_LOGO = 'ensembl.genomehubs.png';
-  $SiteDefs::SITE_LOGO_WIDTH = 150;
-  $SiteDefs::SITE_LOGO_HEIGHT = 50;
-  $SiteDefs::SITE_LOGO_ALT = 'GenomeHubs Ensembl';
-  $SiteDefs::SITE_NAME = 'TEST Ensembl';
-
-  $SiteDefs::ISSUE_TRACKER_URL = 'https://google.com';
-  $SiteDefs::ISSUE_TRACKER_TITLE = 'report an issue';
-
-  $SiteDefs::ENSEMBL_SERVERADMIN = 'contact&#064;lepbase.org';
-
   $SiteDefs::ASSEMBLY_GROUP_A = ['Trichinella_nelsoni_tnel1'];
   $SiteDefs::ASSEMBLY_GROUP_A_TITLE = 'Trichinella';
   $SiteDefs::ASSEMBLY_GROUP_A_TEMPLATE = '_fav_template';
