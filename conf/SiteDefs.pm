@@ -18,7 +18,7 @@ sub update_conf {
   $SiteDefs::ENSEMBL_SERVERADMIN = 'contact&#064;lepbase.org';
 
 #  $SiteDefs::ASSEMBLY_GROUP_A = ['Melitaea_cinxia'];
-  $SiteDefs::ASSEMBLY_GROUP_A_TITLE = 'Assemblies with gene models';
+  $SiteDefs::ASSEMBLY_GROUP_A_TITLE = 'Assemblies with gene models111';
   $SiteDefs::ASSEMBLY_GROUP_A_TEMPLATE = '_fav_template';
 #  $SiteDefs::ASSEMBLY_GROUP_B = ['Bombyx_mori'];
   $SiteDefs::ASSEMBLY_GROUP_B_TITLE = 'Assembly only';
