@@ -1,4 +1,4 @@
-package awolf-lib::template_plugin::SiteDefs;
+package awolf-lib::template-plugin::SiteDefs;
 
 use strict;
 
