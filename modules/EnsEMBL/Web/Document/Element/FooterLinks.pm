@@ -35,7 +35,7 @@ sub content {
 ## BEGIN MODIFICATIONS...
   return qq(
     <div class="twocol-right right">
-      <a href="https://github.com/genomehubs/genomehubs/issues" title="report an issue">report an issue</a> |
+      <a href="https://github.com/genomehubs/genomehubs/issues" title="report an issue">Report an issue</a> |
       <a href="http://www.ensembl.org/" title="ensembl.org"><img style="height:auto;margin-top:-5px;background:none;border:none;" src="/i/empowered.png"></img></a>
     </div>)
   ;
