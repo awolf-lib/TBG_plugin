@@ -1,9 +1,9 @@
-package EG::test_plugin::SiteDefs;
+package EG::GenomeHubs::SiteDefs;
 
 use strict;
 
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/test_plugin/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
 
   $SiteDefs::ASSEMBLY_GROUP_A = [
       "melitaea_cinxia_core_40_93_1",
