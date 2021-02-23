@@ -4,7 +4,7 @@ use strict;
 
 
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/ensembl.mealybug/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
 
   $SiteDefs::ASSEMBLY_GROUP_A = [
       "melitaea_cinxia_core_40_93_1",
