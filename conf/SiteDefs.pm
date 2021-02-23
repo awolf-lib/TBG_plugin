@@ -1,4 +1,4 @@
-package EG::MealyBugBase::SiteDefs;
+package awolf-lib::template-plugin::SiteDefs;
 
 use strict;
 
