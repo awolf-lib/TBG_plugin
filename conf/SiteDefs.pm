@@ -1,7 +1,6 @@
-package awolf-lib::template-plugin::SiteDefs;
+package EG::template-plugin::SiteDefs;
 
 use strict;
-
 
 sub update_conf {
   push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/template-plugin/modules';
