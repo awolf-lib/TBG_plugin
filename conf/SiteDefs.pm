@@ -1,4 +1,4 @@
-package EG::template_plugin::SiteDefs;
+package EG::test_plugin::SiteDefs;
 
 use strict;
 
