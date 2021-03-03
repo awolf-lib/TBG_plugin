@@ -1,10 +1,10 @@
-package EG::GenomeHubs::SiteDefs;
+package EG::TBG::SiteDefs;
 
 use strict;
 
 
 sub update_conf {
-  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/gh-ensembl-plugin/modules';
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/TBG_plugin/modules';
 
   $SiteDefs::SITE_LOGO = 'ensembl.genomehubs.png';
   $SiteDefs::SITE_LOGO_WIDTH = 150;
