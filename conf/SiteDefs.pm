@@ -1,74 +1,28 @@
-package EG::TBG::SiteDefs;
+package EG::GenomeHubs::SiteDefs;
 
 use strict;
 
-=head1 LICENSE
-
-Copyright [2009-2014] EMBL-European Bioinformatics Institute
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-=cut
-
-=head1 MODIFICATIONS
-
-Copyright [2014-2015] University of Edinburgh
-
-All modifications licensed under the Apache License, Version 2.0, as above.
-
-=cut
-
-package EG::TBG::SiteDefs;
-use strict;
 
 sub update_conf {
-    $SiteDefs::ENSEMBL_PORT           = 8080;
+  push @$SiteDefs::ENSEMBL_API_LIBS, $SiteDefs::ENSEMBL_SERVERROOT . '/gh-ensembl-plugin/modules';
 
-## BEGIN LEPBASE MODIFICATIONS...
-    $SiteDefs::ENSEMBL_SERVERNAME     = 'ghubs.izn-ffm.intern';
-## ...END LEPBASE MODIFICATIONS
+  $SiteDefs::SITE_LOGO = 'ensembl.genomehubs.png';
+  $SiteDefs::SITE_LOGO_WIDTH = 150;
+  $SiteDefs::SITE_LOGO_HEIGHT = 50;
+  $SiteDefs::SITE_LOGO_ALT = 'GenomeHubs Ensembl';
+  $SiteDefs::SITE_NAME = 'GenomeHubs Ensembl';
 
-    map {delete($SiteDefs::__species_aliases{$_}) } keys %SiteDefs::__species_aliases;
+  $SiteDefs::ISSUE_TRACKER_URL = 'https://github.com/genomehubs/genomehubs/issues?status=new&status=open';
+  $SiteDefs::ISSUE_TRACKER_TITLE = 'report an issue';
 
-## BEGIN LEPBASE MODIFICATIONS...
-    $SiteDefs::ENSEMBL_PRIMARY_SPECIES  = 'Heliconius_melpomene_hmel2'; # Default species
-    $SiteDefs::ENSEMBL_SECONDARY_SPECIES  = 'Melitaea_cinxia'; # Default species
+  $SiteDefs::ENSEMBL_SERVERADMIN = 'contact&#064;lepbase.org';
 
-    $SiteDefs::__species_aliases{ 'Trichinella_nelsoni' }           = [qw(trichinella_nelsoni_tnel1_core_40_93_1)];
-
-    $SiteDefs::__species_aliases{ 'Dracunculus_medinensis' }= [qw(dracunculus_medinensis_dmed1_core_40_93_1)];
-
-
-## ...END LEPBASE MODIFICATIONS
-    @SiteDefs::ENSEMBL_PERL_DIRS    = (
-                                           $SiteDefs::ENSEMBL_WEBROOT.'/perl',
-                                           $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-common/perl',
-                                           $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-metazoa/perl',
-				       );
-
-## BEGIN LEPBASE MODIFICATIONS...
-    $SiteDefs::SITE_NAME = 'TBG';
-    $SiteDefs::ENSEMBL_SITETYPE = 'TBG';
-## ...END LEPBASE MODIFICATIONS
-    $SiteDefs::SITE_FTP= 'ftp://ftp.ensemblgenomes.org/pub/metazoa';
-    push @SiteDefs::ENSEMBL_HTDOCS_DIRS,  $SiteDefs::ENSEMBL_SERVERROOT.'/../biomarts/metazoa/biomart-perl/htdocs';
-    
-    $SiteDefs::DOCSEARCH_INDEX_DIR = $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-metazoa/data/docsearch';
-
-    $SiteDefs::ENA_COLLECTION_ID = 223;
-
-    $SiteDefs::ENA_SAMPLE_SEQ = "MSLKPKIVEFVDVWPRLRCIAESVITLTKVERSVWNTSFSDVYTLCVAQPEPMADRLYGETKHFLEQHVQEMLAKKVLIEGECSHSNGGPDLLQRYYITWMEYSQGIKYLHQLYIYLNQQHIKKQKITDTESFYGNLSSDAAEQMEIGELGLDIWRLYMIEYLSSELVRHILEGIAADRASNGTLDHHRVQIINGVIHSFVEVQDYKKTGSLKLYQELFEGPMLEASGAYYTDEANKLLHRCSVSEYMQEVIRILEYESRRAQKFLHVSSLPKLRKECEEKFINDRLGFIYSECREMVSEERRQDLRNMYVVLKPIPDNLKSELITTFLDHIKSEGLQTVSALKGENIHIAFVENMLKVHHKYQELIADVFENDSLFLSALDKACASVINRRPTERQPCRSAEYVAKYCDTLLKKSKTCEAEIDQKLTNNITIFKYIEDKDVYQKFYSRLLAKRLIHEQSQSMDAEEGMINRLKQACGYEFTNKLHRMFTDISVSVDLNNKFNTHLKDSNVDLGINLAIKVLQAGAWPLGSTQVIPFAVPQEFEKSIKMFEDYYHKLFSGRKLTWLHHMCHGELKLSHLKKSYIVTMQTYQMAIILLFETCDSLSCREIQNTLQLNDETFQKHMQPIIESKLLNASSENLAGETRIELNLDYTNKRTKFK";
-
+  $SiteDefs::ASSEMBLY_GROUP_A = ['Melitaea_cinxia'];
+  $SiteDefs::ASSEMBLY_GROUP_A_TITLE = 'TBG Assemblies';
+  $SiteDefs::ASSEMBLY_GROUP_A_TEMPLATE = '_fav_template';
+  $SiteDefs::ASSEMBLY_GROUP_B = ['Bombyx_mori'];
+  $SiteDefs::ASSEMBLY_GROUP_B_TITLE = 'Assembly only';
+  $SiteDefs::ASSEMBLY_GROUP_B_TEMPLATE = '_list_template';
+  $SiteDefs::ASSEMBLY_GROUP_C_TITLE = 'Other Assemblies';
+  $SiteDefs::ASSEMBLY_GROUP_C_TEMPLATE = '_list_template';
 }
-
-1;
