@@ -1,4 +1,4 @@
-package EG::TBG::SiteDefs;
+package EG::TBG_plugin::SiteDefs;
 
 use strict;
 
